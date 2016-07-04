@@ -31,7 +31,7 @@ namespace KdTree.Tests
 
 				new KdTreeNode<float, string>(new float[] { 2.5f, 2.5f }, "Root-Left"),
 				new KdTreeNode<float, string>(new float[] { 7.5f, 7.5f }, "Root-Right"),
-				
+
 				new KdTreeNode<float, string>(new float[] { 1, 10 }, "Root-Left-Left"),
 
 				new KdTreeNode<float, string>(new float[] { 10, 10 }, "Root-Right-Right")
@@ -230,7 +230,7 @@ namespace KdTree.Tests
 				toowoomba,
 				new City()
 				{
-					Address = "Brisbane, QLD, Australia", 
+					Address = "Brisbane, QLD, Australia",
 					Lat = -27.4710107f,
 					Long = 153.0234489f,
 					DistanceFromToowoomba = 1.16451615177537f
@@ -284,7 +284,7 @@ namespace KdTree.Tests
 					Lat = 51.5112139f,
 					Long = -0.1198244f,
 					DistanceFromToowoomba = 171.33320836029f
-					
+
 				}*/
 			};
 

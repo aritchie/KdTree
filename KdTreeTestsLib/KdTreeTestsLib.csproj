@@ -35,6 +35,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PCLStorage, Version=1.0.2.0, Culture=neutral, PublicKeyToken=286fe515a2c35b64, processorArchitecture=MSIL">
+      <HintPath>..\packages\PCLStorage.1.0.2\lib\net45\PCLStorage.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PCLStorage.Abstractions, Version=1.0.2.0, Culture=neutral, PublicKeyToken=286fe515a2c35b64, processorArchitecture=MSIL">
+      <HintPath>..\packages\PCLStorage.1.0.2\lib\net45\PCLStorage.Abstractions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
@@ -57,9 +65,12 @@
     <Compile Include="NearestNeighbourListTests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\KdTreeLib\KdTreeLib.csproj">
-      <Project>{68c8066d-7844-41c2-993d-3160798164d1}</Project>
-      <Name>KdTreeLib</Name>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KdTreeLib.Pcl\KdTreeLib.Pcl.csproj">
+      <Project>{ec5b97eb-d6e7-47f6-9733-6f98efb1418e}</Project>
+      <Name>KdTreeLib.Pcl</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>
